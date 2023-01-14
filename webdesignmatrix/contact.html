@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:secure_url" content="" />
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon-32x32.png?v1"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/root.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/dark.css" />
+    <link rel="stylesheet" href="/css/dark-root-styles.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <title>Contact Us / WebDesignMatrix - Affordable Web Design, E-Commerce, S.E.O. Agency in Boca Raton, FL</title>
+  </head>
+  <body >
+    
+
+    <header>
+      <!-- Mobile Nav Strip -->
+      <div class="mobile-wrapper">
+        <div class="mobile-nav mobile-nav-container">
+          <a class="nav-logo" href="/index.html">
+            <svg
+              class="light"
+              aria-hidden="true"
+              decoding="async"
+              id="mobile-logo"
+              alt="company logo"
+              width="200"
+              height="50"
+            ></svg>
+            
+          </a>
+
+          <!-- Hamburger Menu -->
+          <button
+            aria-label="open the menu"
+            id="menu-button"
+            class="hamburger hamburger--spring"
+            onclick="toggleNav()"
+            type="button"
+          >
+            <span aria-hidden="true" class="hamburger-box">
+              <span aria-hidden="true" class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- ============================================ -->
+      <!--                   NAVIGATION                 -->
+      <!-- ============================================ -->
+
+      <nav>
+        <div class="navbar-menu">
+          <div id="side-menu" class="side-nav">
+            <a class="nav-logo" href="/index.html">
+              <svg
+                class="light"
+                aria-hidden="true"
+                decoding="async"
+                id="mobile-logo"
+                alt="company logo"
+                width="200"
+                height="50"
+              ></svg>
+              <!-- <img
+                class="dark"
+                aria-hidden="true"
+                decoding="async"
+                src="./images/logo-white.svg"
+                alt="company logo"
+                height="80"
+              /> -->
+            </a>
+            <ul id="on-top" class="navbar-links">
+              <li class="nav-li">
+                <a class="link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-li">
+                <a class="link" href="/about.html">About</a>
+              </li>
+              <li class="nav-li">
+                <a class="link" href="/index.html#services">Services</a>
+              </li>
+              <!-- <li class="nav-li"><a class="link" href="html/portfolio.html">Portfolio</a></li> -->
+              <li class="nav-li">
+                <a class="link" href="/website-design-boca-raton-fl.html"
+                  >Website Design</a
+                >
+              </li>
+
+              <li class="nav-li">
+                <a
+                  class="link"
+                  href="/search-engine-optimization-boca-raton-fl.html"
+                  >S.E.O.</a
+                >
+              </li>
+              <li class="nav-li">
+                <a class="link" href="#">Blog</a>
+              </li>
+              <li class="nav-li">
+                <a id="active-menu" class="link" href="/contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="contact-page">
+      <!-- ============================================ -->
+      <!--                    Landing                   -->
+      <!-- ============================================ -->
+
+      <section class="frame col" id="int-hero">
+        <button
+          class="dark-mode-button top-dark-mode-button"
+          aria-label="dark mode toggle"
+        >
+          <img
+            class="moon"
+            aria-hidden="true"
+            src="/images/moon.svg"
+            alt=""
+            width="24"
+            height="24"
+          />
+          <img
+            class="sun"
+            aria-hidden="true"
+            src="/images/sun.svg"
+            alt=""
+            width="24"
+            height="24"
+          />
+        </button>
+        <div class="nav-index flex col center-text">
+          <h3>
+            <a class="cta-color" href="./index.html">HOME </a>
+            <span>/ CONTACT</span>
+          </h3>
+        </div>
+        <h1 id="home-h">Contact Us</h1>
+        <p>
+          No pushy sales pitch, just a constructive discussion about your needs
+          and expections.
+        </p>
+      </section>
+
+      <!-- =========================================== -->
+      <!--                CONTACT FORM                 -->
+      <!-- =========================================== -->
+
+      <section id="contact-form">
+        <div class="frame">
+          <p>
+            Call us at <b>561-409-6512</b> or use the form below to contact us.
+            We look forward to the opportunity to learn more about you, your
+            team, and how we can help your business reach new milestones.
+          </p>
+          <form  id="contactForm" action="contactForm.php" method="POST" >
+            <div class="form-input-wrapper flex col">
+              <input class="textInput" type="text" placeholder="Name" />
+              <input class="textInput" type="text" placeholder="Email" />
+              <input class="textInput" type="text" placeholder="Phone " />
+              <div class="option-select-wrapper">
+                <label class="text-center formUlTitle"
+                  >Which service(s) are you interested in?</label
+                >
+                <ul class="flex col contactFormUl">
+                  <li class="formSelect contactFormLi flex formCenter">
+                    <input
+                      type="checkbox"
+                      data-parsley-minlength="1"
+                      data-parsley-maxlength="1"
+                      onclick="toggle()"
+                      data-parsley-trigger="change"
+                      class="form-control"
+                      id="formSelectAll"
+                      name="formSelectAll"
+                      data-parsley-multiple="formSelectAll"
+                    /><label class="" id="selectAllLabel" for="formSelectAll"
+                      >Select All</label
+                    >
+                  </li>
+                  <li class="contactFormLi flex formCenter">
+                    <input
+                      type="checkbox"
+                      data-parsley-minlength="1"
+                      data-parsley-maxlength="1"
+                      data-parsley-trigger="change"
+                      value="Web_Design"
+                      class="formCheckbox form-control"
+                      id="formWebDesign"
+                      name="formWebDesign"
+                      data-parsley-multiple="formWebDesign"
+                    /><label class="" for="formWebDesign">Web Design</label>
+                  </li>
+                  <li class="contactFormLi flex formCenter">
+                    <input
+                      type="checkbox"
+                      data-parsley-minlength="1"
+                      data-parsley-maxlength="1"
+                      value="Website Re-design"
+                      data-parsley-trigger="change"
+                      class="formCheckbox form-control"
+                      id="formReDesign"
+                      name="formReDesign"
+                      data-parsley-multiple="formReDesign"
+                    /><label class="" for="formReDesign"
+                      >Website Re-Design</label
+                    >
+                  </li>
+                  <li class="contactFormLi flex formCenter">
+                    <input
+                      type="checkbox"
+                      data-parsley-minlength="1"
+                      data-parsley-maxlength="1"
+                      data-parsley-trigger="change"
+                      class="formCheckbox form-control"
+                      id="formTroubleshooting"
+                      value="troubleshooting &amp; maintenance"
+                      name="formTroubleshooting"
+                      data-parsley-multiple="formTroubleshooting"
+                    /><label class="" for="formTroubleshooting"
+                      >Troubleshooting</label
+                    >
+                  </li>
+                  <li class="contactFormLi flex formCenter">
+                    <input
+                      type="checkbox"
+                      data-parsley-minlength="1"
+                      data-parsley-maxlength="1"
+                      value="Wordpress Support"
+                      data-parsley-trigger="change"
+                      class="formCheckbox form-control"
+                      id="formWPSupport"
+                      name="formWPSupport"
+                      data-parsley-multiple="formWPSupport"
+                    /><label class="" for="formWPSupport"
+                      >WordPress Support</label
+                    >
+                  </li>
+                  <li class="contactFormLi flex formCenter">
+                    <input
+                      type="checkbox"
+                      data-parsley-minlength="1"
+                      data-parsley-maxlength="1"
+                      data-parsley-trigger="change"
+                      value="Web hosting"
+                      class="formCheckbox form-control"
+                      id="formWebHosting"
+                      name="formWebHosting"
+                      data-parsley-multiple="formWebHosting"
+                    /><label class="" for="formWebHosting">Web Hosting</label>
+                  </li>
+                  <li class="contactFormLi flex formCenter">
+                    <input
+                      type="checkbox"
+                      data-parsley-minlength="1"
+                      data-parsley-maxlength="1"
+                      value="logo design"
+                      data-parsley-trigger="change"
+                      class="formCheckbox form-control"
+                      id="formLogoDesign"
+                      name="formLogoDesign"
+                      data-parsley-multiple="formLogoDesign"
+                    /><label class="" for="formLogoDesign">Logo Design</label>
+                  </li>
+
+                  <li class="contactFormLi flex formCenter">
+                    <input
+                      type="checkbox"
+                      data-parsley-minlength="1"
+                      data-parsley-maxlength="1"
+                      data-parsley-trigger="change"
+                      value="Brand Design"
+                      class="formCheckbox form-control"
+                      id="formBrandDesign"
+                      name="formBrandDesign"
+                      data-parsley-multiple="formBrandDesign"
+                    /><label class="" for="formBrandDesign">Brand Design</label>
+                  </li>
+                  <li class="contactFormLi flex formCenter">
+                    <input
+                      type="checkbox"
+                      data-parsley-minlength="1"
+                      data-parsley-maxlength="1"
+                      value="Graphic Design"
+                      data-parsley-trigger="change"
+                      class="formCheckbox form-control"
+                      id="formGraphicDesign"
+                      name="formGraphicDesign"
+                      data-parsley-multiple="formGraphicDesign"
+                    /><label class="" for="formGraphicDesign"
+                      >Graphic Design</label
+                    >
+                  </li>
+                  <li class="contactFormLi flex formCenter">
+                    <input
+                      type="checkbox"
+                      data-parsley-minlength="1"
+                      data-parsley-maxlength="1"
+                      value="SEO"
+                      data-parsley-trigger="change"
+                      class="formCheckbox form-control"
+                      id="formSEO"
+                      name="formSEO"
+                      data-parsley-multiple="formSEO"
+                    /><label class="" for="formSEO">S.E.O.</label>
+                  </li>
+                  <li class="contactFormLi flex formCenter">
+                    <input
+                      type="checkbox"
+                      data-parsley-minlength="1"
+                      data-parsley-maxlength="1"
+                      value="Security"
+                      data-parsley-trigger="change"
+                      class="formCheckbox form-control"
+                      id="formCybersecurity"
+                      name="formCybersecurity"
+                      data-parsley-multiple="formCybersecurity"
+                    /><label class="" for="formCybersecurity"
+                      >Cybersecurity</label
+                    >
+                  </li>
+                  <li class="contactFormLi flex formCenter">
+                    <input
+                      type="checkbox"
+                      data-parsley-minlength="1"
+                      data-parsley-maxlength="1"
+                      value="Security"
+                      data-parsley-trigger="change"
+                      class="formCheckbox form-control"
+                      id="formRansomware"
+                      name="formRansomware"
+                      data-parsley-multiple="formRansomware"
+                    /><label class="" for="formRansomware"
+                      >Ransomware Protection</label
+                    >
+                  </li>
+                  <li class="contactFormLi flex formCenter">
+                    <input
+                      type="checkbox"
+                      data-parsley-minlength="1"
+                      data-parsley-maxlength="1"
+                      value="Digital Marketing"
+                      data-parsley-trigger="change"
+                      class="formCheckbox form-control"
+                      id="formDigitalMarketing"
+                      name="formDigitalMarketing"
+                      data-parsley-multiple="formDigitalMarketing"
+                    /><label class="" for="formDigitalMarketing"
+                      >Digital Marketing</label
+                    >
+                  </li>
+
+                  <li class="contactFormLi flex formCenter">
+                    <input
+                      type="checkbox"
+                      data-parsley-minlength="1"
+                      data-parsley-maxlength="1"
+                      value="Copywriting"
+                      data-parsley-trigger="change"
+                      class="formCheckbox form-control"
+                      id="formCopywrite"
+                      name="formCopywrite"
+                      data-parsley-multiple="formCopywrite"
+                    /><label class="" for="formCopywrite">Copywriting</label>
+                  </li>
+                  <li class="contactFormLi flex formCenter">
+                    <input
+                      type="checkbox"
+                      data-parsley-minlength="1"
+                      data-parsley-maxlength="1"
+                      value="Free consultation"
+                      data-parsley-trigger="change"
+                      class="formCheckbox form-control"
+                      id="formFreeConsult"
+                      name="formFreeConsult"
+                      data-parsley-multiple="formFreeConsult"
+                    /><label class="" for="formFreeConsult"
+                      >Free Consultation</label
+                    >
+                  </li>
+                  <li class="contactFormLi flex formCenter">
+                    <input
+                      type="checkbox"
+                      data-parsley-minlength="1"
+                      data-parsley-maxlength="1"
+                      value="Security"
+                      data-parsley-trigger="change"
+                      class="formCheckbox form-control"
+                      id="formFreeAudit"
+                      name="formFreeAudit"
+                      data-parsley-multiple="formFreeAudit"
+                    /><label class="" for="formFreeAudit"
+                      >Free Website Audit</label
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <label for="contactText">Provide a brief description:</label>
+        <textarea name="message" data-parsley-trigger="keyup" id="contactText" data-parsley-minlength="20"
+          data-parsley-maxlength="150" class="form-control" cols="30" rows="10"
+          data-parsley-minlength-message="A minimum of 20 characters required to send comment.."
+          data-parsley-validation-threshold="10" required=""></textarea>
+        <!-- <label for="">Would you like us to call you back?</label>
+        <div class="radioContainer">
+          <ul class="flex col contactFormUl">
+            <li class="formRadio radioCall">
+              <input class="formCenter radioCall" name="formCallBack" data-parsley-minlength="7"
+                data-parsley-maxlength="7" data-parsley-trigger="change" required="" type="radio" value="yesCall"
+                id="formYesCallBack">
+              <label class=" i-block" for="formYesCallBack" id="yesCallLabel">Yes, let's talk!</label>
+            </li>
+            <li class="formRadio radioCall">
+              <input data-parsley-minlength="7" data-parsley-maxlength="7" data-parsley-trigger="change" required=""
+                class="formCenter formRadio i-block" name="formCallBack" type="radio" value="noCalls"
+                id="formNoDontCall">
+              <label for="formNoDontCall" id="noCallLabel">No! I'm not ready.</label>
+            </li>
+          </ul>
+            </div> -->
+            <div class="center-text">
+              <div class="g-recaptcha" data-sitekey="6Leva-UjAAAAAABuqF8NURQjONSqcQBOdYODWwn7" id="recaptchav2"></div>
+            </div>
+            <div class="buttons">
+              <button data-action="submit"  type="submit" value="submit" class="button-solid">Submit Request</button>
+            </div>
+
+            
+            </div>
+          </form>
+        </div>
+      </section>
+      <div class="bottom-disclaimer">© 2023 All Rights Reserved. </div>
+    </main>
+    <script>function validate(form) {
+      console.log("validating form then requesting token")
+      //perform optional error checking on form. If no errors then request a token and put it into the hidden field
+      getRecaptchaToken(form)
+    }
+
+    //some other (optional) form validation functions
+
+    function getRecaptchaToken(form) {
+      console.log("getting recaptcha token")
+      grecaptcha.ready(function () {
+        grecaptcha.execute("6Leva-UjAAAAAABuqF8NURQjONSqcQBOdYODWwn7", { action: 'contactForm' }).then(function (token) {
+          gRecaptchaResponse.value = token //set the value of the hidden field
+          console.log("Token value is:", token)
+          form.submit() //submit the form
+        });
+      });
+    }</script>
+    <script
+      defer
+      src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+    <script defer src="/app.js"></script>
+  </body>
+</html>

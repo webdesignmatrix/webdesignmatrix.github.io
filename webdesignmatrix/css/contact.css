@@ -1,0 +1,167 @@
+/*-- -------------------------- -->
+<---          Landing           -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #contact-form {
+    padding-top: 50px;
+  }
+
+
+  #contact-form > div > form > div.buttons > a {
+
+    border-radius: 5px;
+    width: 50%;
+    height: 2.94444444em;
+    padding: 30px 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--ctaLight);
+    z-index: 1;
+  }
+  #drop-down-cta {
+    margin-top: 50px;
+    height: 420px;
+  }
+  #int-hero .nav-index {
+    position: absolute;
+    top: 20px;
+    font-size: 13px;
+    width: 100%;
+    
+  }
+  #int-hero {
+    min-height: 300px;
+    background: url("../images/contact-bg-mobile-compress.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  #int-hero:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .5;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #int-hero h1 {
+    color: #fff;
+    font-size: 3.2em;
+    text-align: center;
+    margin: 0;
+    position: relative;
+  }
+  
+#int-hero h3 {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: var(--white);
+}
+#int-hero p {
+color: var(--gray)
+}
+}
+/* Tablet */
+@media only screen and (min-width: 48em) {
+  #int-hero {
+    font-size: 20px;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #int-hero {
+    min-height: 15em;
+    height: 15em;
+    margin-top: 4em;
+    background-attachment: fixed;
+    background-position: center 80%;
+    font-size: inherit;
+  }
+}
+
+
+
+/*-- -------------------------- -->
+<---      CONTACT FORM          -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+
+  
+
+main#contact-page #contact-form{
+  color: var(--darkPrimary);
+  border-bottom: none;
+}
+  #contact-form .contactFormUl {
+    flex-wrap: wrap;
+    
+    height: 290px;
+    padding-left:  0;
+    margin: 30px auto;
+    
+  
+  }
+  
+  #contact-form > div > p {
+    margin-bottom: 30px;
+  }
+  #contact-form .contactFormLi {
+    
+  color: var(--dark)
+  }
+  #contact-form .textInput {
+    height: 40px;
+    margin-top: 20px;
+    
+  }
+  
+  #contact-form .option-select-wrapper {
+    margin-top: 50px;
+  }
+  
+  .contactFormUl input {
+  margin-right: 5px;
+  }
+  .contactFormUl label {
+    font-size: 14px;
+    }
+  
+  .contactFormLi {
+    margin-top: 10px;
+  }
+  #contact-form textarea, #contact-form .textInput {
+    padding: 1em;
+    border-radius: 2px;
+    background-color: rgb(250, 250, 250);
+    
+  }
+  #contact-form textarea {
+    margin-bottom: 50px;
+  }
+  /* Tablet */
+@media only screen and (min-width: 48em) {
+  #contact-form .contactFormUl {
+    max-width: 500px;
+    
+  }
+}
+  
+  }
