@@ -284,12 +284,7 @@ body.dark-mode #drop-down-cta label {
 }
 /* Intermediate Desktop */
 @media screen and (min-width: 2000px) {
-  .top-dark-mode-button {
-    right: 0em;
-    left: auto;
-    height: 1.6em;
-    width: 1.6em;
-  }
+  
   .top-dark-mode-button img {
     width: 1.5em;
     height: 1.5em;

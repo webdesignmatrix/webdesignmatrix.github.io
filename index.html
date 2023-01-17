@@ -96,18 +96,36 @@
             <li class="nav-li">
               <a id="active-menu" class="link" href="/index.html"> Home </a>
             </li>
-            <li class="nav-li">
+            <li class="nav-li ">
               <a id="" class="link" href="/about.html">About</a>
             </li>
-            <li class="nav-li">
-              <a class="link" href="index.html#services">Services</a>
+            <li class="nav-li services-li" onmouseover="expandUl()" onmouseout="closeUl()">
+              <a  class="link services-li services-menu" href="#"  >Services</a>
+              
+              <ul class="dropdown-ul" onmouseout="closeUl()" >
+                <li class="nav-li dropdown-web-design" >
+                  <a class="link" href="/website-design-boca-raton-fl.html">Website Design</a>
+                </li>
+    
+                <li class="nav-li dropdown-seo">
+                  <a class="link" href="/search-engine-optimization-boca-raton-fl.html">S.E.O.</a>
+                </li>
+              </ul>
             </li>
+            
+            
+              
+              
+              
+              
+              
+                            
             <!-- <li class="nav-li"><a class="link" href="html/portfolio.html">Portfolio</a></li> -->
-            <li class="nav-li">
+            <li class="nav-li menu-web-design">
               <a class="link" href="/website-design-boca-raton-fl.html">Website Design</a>
             </li>
 
-            <li class="nav-li">
+            <li class="nav-li menu-seo">
               <a class="link" href="/search-engine-optimization-boca-raton-fl.html">S.E.O.</a>
             </li>
             <li class="nav-li">
@@ -117,11 +135,31 @@
               <a class="link" href="/contact.html">Contact</a>
             </li>
           </ul>
+          
         </div>
       </div>
     </nav>
   </header>
+<script>
+  var dropdownMenu = document.querySelector(".services-dropdown");
+var dropdownUl = document.querySelector(".dropdown-ul");
+var servicesMenu = document.querySelector(".services-menu")
+  function expandUl() {
 
+
+$(dropdownMenu).addClass("expand")
+$(dropdownUl).addClass("expand")
+$(servicesMenu).addClass("is-open")
+
+  }
+  function closeUl() {
+    $(dropdownMenu).removeClass("expand")
+$(dropdownUl).removeClass("expand")
+$(servicesMenu).removeClass("is-open")
+console.log("mouse away!")
+  }
+  
+</script>
   <main id="main">
     <!-- ============================================ -->
     <!--                    LANDING                   -->

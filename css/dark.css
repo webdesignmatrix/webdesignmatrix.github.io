@@ -251,7 +251,7 @@
   body.dark-mode #why-us {
     background: var(--darkPrimary);
   }
-  body.dark-mode .why-us span, body.dark-mode .seo-block span, body.dark-mode .pricing-top h3 span, body.dark-mode .seo-pricing-block-1 span{
+  body.dark-mode .why-us span, body.dark-mode .seo-block span, body.dark-mode .pricing-top h3 span, body.dark-mode .seo-pricing-block-1 span, body.dark-mode .faq-block h2:after{
     color: #fb2573e9;
   }
   body.dark-mode #about-content .content .topper {
@@ -298,7 +298,7 @@
   body.dark-mode #hero > div > div > span {
     color: var(--gray);
   }
-  body.dark-mode #action-plan {
+  body.dark-mode #action-plan, body.dark-mode .question, body.dark-mode .answers {
     background: var(--darkPrimary);
   }
 
@@ -329,7 +329,7 @@
 
   body.dark-mode #free-audit,
   body.dark-mode .cd-faq-categories a,
-  body.dark-mode .faq-cta {
+  body.dark-mode .faq-cta, body.dark-mode .faq-block {
     background-color: var(--shadeDark);
     color: var(--gray);
   }
@@ -358,7 +358,7 @@
   }
   
       
-  body.dark-mode #industries-served li,
+  body.dark-mode #industries-served li, body.dark-mode .answers li,
   body.dark-mode #web-design-pricing span, body.dark-mode #web-design-pricing li, body.dark-mode #seo-pricing div>h2, body.dark-mode .contactFormUl label, body.dark-mode .formUlTitle, body.dark-mode .bottom-disclaimer  {
     color: var(--white);
   }
